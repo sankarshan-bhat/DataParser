@@ -20,7 +20,7 @@ To parse the full data set, we simply use the command above, but change items-0.
 python skeleton_parser.py ebay_data/items-*.json
 
 
-## TASK C: LOAD THE DATA INTO SQLITE
+## TASK B: LOAD THE DATA INTO SQLITE
 The next step is to create and populate the AuctionBase database. SQLite provides a facility for reading a
 set of commands from a file. I am kaing use of this facility for (re)building the database and running sample
 queries.
@@ -33,7 +33,7 @@ update Items set ... -- Replace all token ‘NULL‘ values with null
 .import auctionuser.dat AuctionUser
 ...
 
-## TASK D: TEST THE SQLITE DATABASE
+## TASK C: TEST THE SQLITE DATABASE
 The final step is to take the newly loaded database for a test drive by running a few SQL queries over it.
 We run below sample SQL queries to test the Datbase and verify the results:
 1. Find the number of users in the database.
