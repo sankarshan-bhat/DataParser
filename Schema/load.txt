@@ -1,0 +1,28 @@
+.separator |
+
+.import auctionCategory.dat category
+
+.import auctionUser.dat users
+
+update users set rating = null where rating = "NULL";
+update users set location = null where location = "NULL";
+update users set country = null where country = "NULL";
+
+.import auctionItem.dat items
+
+update items set name = null where name = "NULL";
+update items set currently = null where currently = "NULL";
+update items set buyprice = null where buyprice = "NULL";
+update items set firstbid = null where firstbid = "NULL";
+update items set numberofbids = null where numberofbids = "NULL";
+update items set started = null where started = "NULL";
+update items set ends = null where ends = "NULL";
+update items set sellerid = null where sellerid = "NULL";
+update items set description = null where description = "NULL";
+
+.import auctionBid.dat bids
+
+update bids set amount = null where amount = "NULL";
+update bids set time = null where time = "NULL";
+
+.import auctionItemCategory.dat itemscategoryrel
