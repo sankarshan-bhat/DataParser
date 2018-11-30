@@ -1,0 +1,1 @@
+select itemid from items where currently = (select max(currently) from items);

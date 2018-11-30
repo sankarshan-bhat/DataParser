@@ -1,0 +1,1 @@
+select count(*) from (select itemid from itemscategoryrel group by itemid  having count(*) =4);
